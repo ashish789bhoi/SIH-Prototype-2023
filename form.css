@@ -1,0 +1,183 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(group.jpg);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #007bff; /* Change to the desired background color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100px; /* Adjust the size of the government logo as needed */
+    display: block;
+    margin: 0 auto 10px; /* Center the logo and add some margin below */
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.dashboard-content {
+    flex-basis: 70%; /* Adjust the width of the dashboard contents */
+}
+
+.data-entry {
+    flex-basis: 25%; /* Adjust the width of the data entry section */
+}
+
+/* Specific page styles */
+/* Customize these styles for the dashboard contents and data entry section as needed // Add this CSS code to your existing stylesheet */
+/* Specialized form styles */
+
+/* Style the form container */
+form.specialized-form {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+form.specialized-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Style form inputs */
+form.specialized-form input[type="text"],
+form.specialized-form input[type="number"],
+form.specialized-form input[type="date"],
+form.specialized-form select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+/* Style the submit button */
+form.specialized-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+    box-shadow 0.3s ease;
+    margin-left: 140px;
+}
+
+form.specialized-form button[type="submit"]:hover {
+    box-shadow: 4px 4px 5px #0056b3;
+    background-color: #0056b3;
+}
+
+/* Center the form within its container */
+form.specialized-form {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+
+header {
+    background-color: #f09d27; /* Change to the desired background color */
+    color: #fff;
+    text-align: center;
+    max-width:inherit;
+    padding: 20px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.headr{
+    align-self: self-start;
+    /* margin-left: -38%; */
+    width: 100%;
+    padding-right: 25%;
+    color: rgb(161 4 118);
+}
+
+.headl{
+    width: 100%;
+    
+}
+
+.headl img{
+    padding-right: 32%;
+    height: 7rem;
+    
+}
+
+.front{
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+
+.frontl{
+    width: 60%;
+    text-align: center;
+}
+
+.frontr{
+    width: 40%;
+    text-align: center;
+}
+/* 
+next is for media query         */
+@media screen and (max-width < 790px) {
+.headr{
+padding-right: 4%;
+}
+}
+
+@media screen and (max-width < 450px) {
+.mainhead{
+display: block;
+}
+
+.headl img{
+padding-right: 38%;
+margin-left: 10%;
+}
+}
+
+form{
+    opacity: 0.8;
+}

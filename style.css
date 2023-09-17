@@ -1,0 +1,57 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #007bff; /* Change to the desired background color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100px; /* Adjust the size of the government logo as needed */
+    display: block;
+    margin: 0 auto 10px; /* Center the logo and add some margin below */
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.dashboard-content {
+    flex-basis: 70%; /* Adjust the width of the dashboard contents */
+}
+
+.data-entry {
+    flex-basis: 25%; /* Adjust the width of the data entry section */
+}
+
+/* Specific page styles */
+/* Customize these styles for the dashboard contents and data entry section as needed */

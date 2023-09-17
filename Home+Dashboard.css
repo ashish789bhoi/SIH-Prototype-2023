@@ -1,0 +1,129 @@
+/* Global styles */
+
+        .thebig{
+            max-width: 95%;
+            background: gray;
+            margin-inline: auto;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-color: rgb(220, 1000, 5000); */
+            background-color: antiquewhite;
+        }
+
+        .flex{
+            display: flex;
+            align-items: center;
+        }
+
+
+
+        .frontmain{
+            justify-content: space-between;
+            
+        }
+
+
+        header {
+            background-color: #f09d27; /* Change to the desired background color */
+            color: #fff;
+            text-align: center;
+            max-width:inherit;
+            padding: 20px;
+            justify-content: space-around;
+        }
+
+        .headr{
+            align-self: self-start;
+            /* margin-left: -38%; */
+            width: 100%;
+            padding-right: 20%;
+            color: rgb(161 4 118);
+        }
+
+        .headl{
+            width: 100%;
+            
+        }
+
+        .headl img{
+            padding-right: 32%;
+            
+        }
+
+        .front{
+            justify-content: space-between;
+            background-color: antiquewhite;
+        }
+
+        .frontl{
+            width: 60%;
+            text-align: center;
+        }
+
+        .frontr{
+            width: 40%;
+            text-align: center;
+        }
+        
+        .mainhead{
+            /* max-width: 95%; */
+        }
+
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #f5e48c;
+            color: black;
+            text-align: center;
+            /* font-display:calc(100%); */
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f5e48c;
+            color: black;
+            text-align: center;
+        }
+
+        td {
+            background-color: #f5e48c;
+        }
+
+        a {
+            /* color: #f5e48c; */
+            text-decoration: none;
+        }
+
+        table a{
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+/* 
+next is for media query         */
+@media screen and (max-width < 790px) {
+    .headr{
+        padding-right: 4%;
+    }
+}
+
+@media screen and (max-width < 450px) {
+    .mainhead{
+        display: block;
+    }
+
+    .headl img{
+        padding-right: 38%;
+        margin-left: 10%;
+    }
+}

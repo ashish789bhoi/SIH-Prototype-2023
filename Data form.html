@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Student Dropout Form</title>
+</head>
+<body>
+    <header class="mainhead flex">
+        <div class="headl">
+            <img src="gujjulogo.png" alt="Government Logo">
+
+        </div>
+        <div class="headr">
+            <h1 style="color: rgb(127, 24, 0);">Student Dropout Analysis</h1>
+            <p style="color: rgb(127, 24, 0);">Summary of overall dropout rates.</p>
+        </div>
+        <div class="headrimg">
+            <img src="gujjuemblem.png" style="height: 7rem; margin-right: 5rem;" alt="">
+        </div>
+       
+    </header>
+    <main>
+        <form class="specialized-form">
+            <fieldset>
+                <legend><h2>Personal Information</h2></legend>
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" required>
+            
+            <label for="studentdob">Date of Birth:</label>
+            <input type="date" id="studentdob" name="studentdob" required>
+            <label for="studentgender">Gender:</label>
+            <select id="studentgender" name="studentgender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="studentCategory">Category:</label>
+            <select id="studentCategory" name="studentCategory" required>
+                <option value="General">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+            </select>
+            
+            <label for="studentCaste">Caste:</label>
+            <input type="text" id="studentCaste" name="studentCaste" required>
+            <label for="aadhar">Aadhar Number:</label>
+            <input type="text" id="aadhar" name="aadhar" required>
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>  
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" required>  
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>  
+            <label for="studentDistrict">District:</label>
+            <select id="studentDistrict"  name="studentDistrict" required>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Surat">Surat</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Amreli">Amreli</option>
+                <option value="Anand">Anand</option>
+                <option value="Aravalli">Aravalli</option>
+                <option value="Banaskantha">Banaskantha</option>
+                <option value="Bharuch">Bharuch</option>
+                <option value="Bhavnagar">Bhavnagar</option>
+                <option value="Botad">Botad</option>
+                <option value="Chhota Udaipur">Chhota Udaipur</option>
+                <option value="Dahod">Dahod</option>
+                <option value="Dang">Dang</option>
+                <option value="Devbhumi Dwarka">Devbhumi Dwarka</option>
+                <option value="Gandhinagar">Gandhinagar</option>
+                <option value="Gir Somnath">Gir Somnath</option>
+                <option value="Jamnagar">Jamnagar</option>
+                <option value="Junagarh">Junagarh</option>
+                <option value="Kheda">Kheda</option>
+                <option value="Kutch">Kutch</option>
+                <option value="Mahisagar">Mahisagar</option>
+                <option value="Mehsana">Mehsana</option>
+                <option value="Morbi">Morbi</option>
+                <option value="Narmada">Narmada</option>
+                <option value="Navsari">Navsari</option>
+                <option value="Panchmahal">Panchmahal</option>
+                <option value="Patan">Patan</option>
+                <option value="Porbandar">Porbandar</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Sabarkantha">Sabarkantha</option>
+                <option value="Surendranagar">Surendranagar</option>
+                <option value="Tapi">Tapi</option>
+                <option value="Valsad">Valsad</option>
+                <!-- Add all other districts of Gujarat here -->
+            </select> 
+            </fieldset>         
+            <!-- New fields -->
+            <fieldset>
+                <legend><h2>Educational Details</h2></legend>
+            <label for="schoolName">School Name:</label>
+            <input type="text" id="schoolName" name="schoolName" required>
+            <label for="schooldistrict">School District:</label>
+            <select id="studentDistrict"  name="studentDistrict" required>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Surat">Surat</option>
+                <option value="Vadodara">Vadodara</option>
+                <option value="Amreli">Amreli</option>
+                <option value="Anand">Anand</option>
+                <option value="Aravalli">Aravalli</option>
+                <option value="Banaskantha">Banaskantha</option>
+                <option value="Bharuch">Bharuch</option>
+                <option value="Bhavnagar">Bhavnagar</option>
+                <option value="Botad">Botad</option>
+                <option value="Chhota Udaipur">Chhota Udaipur</option>
+                <option value="Dahod">Dahod</option>
+                <option value="Dang">Dang</option>
+                <option value="Devbhumi Dwarka">Devbhumi Dwarka</option>
+                <option value="Gandhinagar">Gandhinagar</option>
+                <option value="Gir Somnath">Gir Somnath</option>
+                <option value="Jamnagar">Jamnagar</option>
+                <option value="Junagarh">Junagarh</option>
+                <option value="Kheda">Kheda</option>
+                <option value="Kutch">Kutch</option>
+                <option value="Mahisagar">Mahisagar</option>
+                <option value="Mehsana">Mehsana</option>
+                <option value="Morbi">Morbi</option>
+                <option value="Narmada">Narmada</option>
+                <option value="Navsari">Navsari</option>
+                <option value="Panchmahal">Panchmahal</option>
+                <option value="Patan">Patan</option>
+                <option value="Porbandar">Porbandar</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Sabarkantha">Sabarkantha</option>
+                <option value="Surendranagar">Surendranagar</option>
+                <option value="Tapi">Tapi</option>
+                <option value="Valsad">Valsad</option>
+                <!-- Add all other districts of Gujarat here -->
+            </select> 
+            <label for="studentStandardatdrop">Standard at Dropout:</label>
+            <select id="studentStandardatdrop" name="studentStandardatdrop" required>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+                <option value="5th">5th</option>
+                <option value="6th">6th</option>
+                <option value="7th">7th</option>
+                <option value="8th">8th</option>
+                <option value="9th">9th</option>
+                <option value="10th">10th</option>
+                <option value="11th">11th</option>
+                <option value="12th">12th</option>
+            </select>
+            <label for="reason">Reason for Dropout:</label>
+            <select id="reason" name="reason" required>
+                <option>Economic Reasons</option>
+                <option>Family Issues</option>
+                <option>Health Issues</option>
+                <option>Other</option>
+            </select>
+            <label for="dateofdrop">Date of Droput:</label>
+            <input type="date" id="dateofdrop" name="dateofdrop" required>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Family Information</h2></legend>
+                <label for="parentname">Parent/Guardian Name:</label>
+                <input type="text" id="parentname" name="parentname" required>
+                <label for="parentocc">Parent/Guardian Occupation:</label>
+                <input type="text" id="parentocc" name="parentocc" required>
+                <label for="yearleincome">Yearly Family Income</label>
+                <select id="yearlyincome" name="yearlyincome" required>
+                    <option>Below ₹2,50,000</option>
+                    <option>₹2,50,000-₹8,00,000</option>
+                    <option>Above ₹8,00,000</option>
+                </select>
+                <label for="noofsiblings">Number of Siblings:</label>
+                <input type="number" id="noofsiblings" name="noofsiblings" required>
+            </fieldset>
+            <fieldset>
+                <legend><h2>Additional Information</h2></legend>
+                <label for="aid">Did the student receive any financial or educational support?</label>
+                <input type="radio" id="aid" name="aid" value="yes" style="cursor: pointer;" required>
+                <label for="yes" style="display: inline-block;">Yes</label>
+                <input type="radio" id="aid" name="aid" value="no" style="cursor: pointer;" required>
+                <label for="no" style="display: inline-block;">No</label>
+                <label for="typeofsupport">If yes, please specify the type of support received:</label>
+                <input type="text" id="typeofsupport" name="typeofsupport">
+                <label for="comments">Suggestions or Comments:</label>
+                <input type="text" id="comments" name="comments">
+            </fieldset>
+            <h2 style="text-align: left;">Declaration:</h2>
+            <p>I hereby confirm that the information provided above is accurate to the best of my knowledge.</p>
+            <input type="checkbox" id="checkbox" name="checkbox" value="I_agree" style="cursor: pointer;" required>
+            <label for="I_agree" style="display: inline-block;">I agree</label><br>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

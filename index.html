@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="rough1.css"> -->
+    <title>Dropout Analysis Dashboard</title>
+    <link rel="stylesheet" href="Home+Dashboard.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['YEARS', 'DROPOUT IN PERCENTAGE'],
+          ['2017-18',20.6], ['2018-19', 23.8], ['2019-20', 23.7],
+          ['2020-21', 23.3], ['2021-22', 20.6], ['2022-PRESENT', 15.4]
+        ]);
+
+        var options = {
+          title: 'SCOOL DROPOUTS IN SECONDARY SCHOOLS FOR THE SESSION 2023-24',
+          legend: 'none',
+          pieSliceText: 'label',
+          slices: {  4: {offset: 0.2},
+                    12: {offset: 0.3},
+                    14: {offset: 0.4},
+                    15: {offset: 0.5},
+          },
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piecharts'));
+        chart.draw(data, options);
+        google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['YEARS', 'DROP OUT IN PERCENTAGE'],
+          ['2017-18', 18.2], 
+          ['2018-19', 20.5], 
+          ['2019-20', 21.1],
+          ['2020-21', 19.8], 
+          ['2021-22', 17.3], 
+          ['2022-PRESENT', 14.9],
+          ['2023-24', 13.7] // New data point
+        ]);
+
+        var options = {
+          title: 'SCHOOL DROPOUTS IN PRIMARY SCHOOLS FOR THE SESSION 2023-24',
+          legend: 'none',
+          pieSliceText: 'label',
+          slices: {  
+            4: {offset: 0.2},
+            12: {offset: 0.3},
+            14: {offset: 0.4},
+            15: {offset: 0.5},
+          },
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
+      }
+      }
+    </script>
+</head>
+<body>
+    <header class="mainhead flex">
+        <div class="headl">
+            <img src="logo.jpg" alt="Government Logo">
+
+        </div>
+        <div class="headr">
+            <h1 style="color: rgb(127, 24, 0);">Student Dropout Analysis</h1>
+            <p style="color: rgb(127, 24, 0);">Summary of overall dropout rates.</p>
+        </div>
+        <div class="headrimg">
+        <img src="gujjuemblem.png" style="height: 7rem; margin-right: 5rem;" alt="">
+    </div>
+       
+    </header>
+
+    <nav>
+        <table>
+            <tr>
+                <th><a href="index.html">Dashboard</a></th>
+                <th><a href="Category-wise.html">Category-Analysis</a></th>
+                <!-- <th><a href="#">Services</a></th>
+                <th><a href="#">News</a></th> -->
+                <th><a href="Intervention.html">Solutions</a></th>
+                <th><a href="http://gujarat-education.gov.in/education/contact.htm">Contact Us</a></th>
+            </tr>
+        </table>
+    </nav>
+
+    <div class="thebig"> 
+        <!-- write everything you need in thebig. -->
+
+       
+
+
+        <div class="front flex">
+            <div class="frontl">
+                <marquee behavior="scrolls" direction="left-right" scrollamount="15">
+                    <h2>Dashboard Contents</h2>
+                   
+                </marquee>
+                <div class="charts" style="display: flex;">
+                <div id="piecharts" style="width: 400px; height: 350px;"></div>
+                <div id="piechart" style="width: 400px; height: 350px;"></div>
+                </div>
+            </div>
+            <div class="frontr">
+                <h2 style="color: rgb(127, 24, 0);">Data Entry</h2>
+                <p>Enter student dropout data:</p>
+                <button><a style="text-decoration: none;" href="Data form.html">Go to Dropout Form</a></button>
+            </div>
+    
+        </div>
+        
+
+    </div>
+    
+</body>
+</html>

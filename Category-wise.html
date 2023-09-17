@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dropout Analysis Dashboard</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+                var data = google.visualization.arrayToDataTable([
+          ['AGE','GUJRAT SCHOOL','INDIAN SCHOOL'],
+          ['7', 0.5 ,0.7],
+          ['8',  0.9,0.9],
+          ['9',  0.7,0.8],
+          ['10', 1.1,1.5],
+          ['11', 1.3,2.0],
+          ['12',7.1,9.7],
+          ['13',6.9,9],
+          ['14',7.2,8],
+          ['15',14.3,9.4],
+          ['16',15.1,10.2],
+          ['17',13.3,11.4],
+          ['18',13.7,13.5],
+
+        ]);
+        var options = {
+          title : 'DROPOUT RATE ANALYSIS OF OF SCHOOL IN GUJRAT VS SCHOOL IN INDIA',
+          vAxis: {title: 'DROPOUT RATE '},
+          hAxis: {title: 'AGE OF STUDENTS'},
+          seriesType: 'bars',
+        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* display: flex; */
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-image: url(group.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
+        /* Specific page styles for Page 3 - Category Analysis */
+        .category-analysis {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            max-width: 600px; /* Limit width for readability */
+        }
+
+        .category-analysis h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .category-analysis p {
+            color: #555;
+        }
+
+        /* Dropdown menu styles */
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        /* Placeholder styles for visual representations (graphs) */
+        .category-analysis .graph {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        section{
+            margin: auto;
+            opacity: 0.80;
+        }
+        
+        header {
+            background-color: #f09d27; /* Change to the desired background color */
+            color: #fff;
+            text-align: center;
+            max-width:inherit;
+            padding: 20px;
+            justify-content: space-around;
+            display: flex;
+        }
+
+        .headr{
+            align-self: self-start;
+            /* margin-left: -38%; */
+            width: 80%;
+            padding-right: 25%;
+            color: rgb(161 4 118);
+        }
+
+        .headl{
+            width: 100%;
+            
+        }
+
+        .headl img{
+            padding-right: 32%;
+            height: 7rem;
+            
+        }
+
+        .front{
+            justify-content: space-between;
+            background-color: antiquewhite;
+        }
+
+        .frontl{
+            width: 60%;
+            text-align: center;
+        }
+
+        .frontr{
+            width: 40%;
+            text-align: center;
+        }
+/* 
+next is for media query         */
+@media screen and (max-width < 790px) {
+    .headr{
+        padding-right: 4%;
+    }
+}
+
+@media screen and (max-width < 450px) {
+    .mainhead{
+        display: block;
+    }
+
+    .headl img{
+        padding-right: 38%;
+        margin-left: 10%;
+        height: 8rem;                  
+    }
+}
+    </style>
+</head>
+<body><header class="mainhead flex">
+    <div class="headl">
+        <img src="gujjulogo.png" alt="Government Logo">
+
+    </div>
+    <div class="headr">
+        <h1 style="color: rgb(127, 24, 0);">Student Dropout Analysis</h1>
+        <p style="color: rgb(127, 24, 0);">Summary of overall dropout rates.</p>
+    </div>
+    <div class="headrimg">
+        <img src="gujjuemblem.png" style="height: 7rem; margin-right: 5rem;" alt="">
+    </div>
+   
+</header>
+    <main>
+     <!-- Page 3: Category Analysis -->
+        <section class="category-analysis">
+            <h2 style="text-align: center;">Category Analysis</h2>
+            <!-- Dropdown menu for category selection -->
+            <label for="analysisCategory" style="text-align: center;">Select Category:</label>
+            <select id="analysisCategory" name="analysisCategory">
+                <option value="age">Age</option>
+                <option value="district">District</option>
+                <option value="standard">Standard</option>
+                <option value="gender">Gender</option>
+                <option value="category">Category</option>
+                <!-- Add more options as needed -->
+            </select>
+
+            <p style="text-align: center;"><b>Visual representation of dropout rates for the chosen category.</b></p>
+            <!-- <p style="text-align: center;"><b>Basic insights for dropouts in that category.</b></p> -->
+            <p style="text-align: center;"><b>(Bydefault on the basis of Age)</b></p>
+            
+            <!-- Placeholder for visual representations (graphs) -->
+            <div class="graph">
+                <div id="chart_div" style="width:500px; height: 300px;"></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
